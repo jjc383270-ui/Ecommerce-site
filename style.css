@@ -5,10 +5,11 @@ body {
 nav {
   height: 80px;
   display: flex;
-  }
-  img {
-    width: 100%
-  }
+}
+
+img {
+  width: 100%;
+}
 
 .nav__container {
   width: 100%;
@@ -114,4 +115,44 @@ button:active {
 }
 .nav__link {
   margin-left: 16px;
+}
+
+/* 
+
+HIGHLIGHTS
+
+*/
+
+.highlight_wrapper {
+    display: flex;
+}
+
+.highlight {
+    padding: 0 24px;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight__para {
+    text-align: center;
+}
+.highlight__img {
+    border: 2px solid #7342d65d;
+    color: #7342d6;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.highlight__subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
 }
