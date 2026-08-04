@@ -1,6 +1,9 @@
 body {
   font-family: Roboto, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 nav {
   height: 80px;
@@ -9,6 +12,18 @@ nav {
 
 img {
   width: 100%;
+}
+
+p {
+  line-height: 1.5;
+
+}
+a {
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .nav__container {
@@ -58,6 +73,16 @@ li {
   background-color: #7342d6;
   color: white;
 }
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  color: #7342d6
+}
+.menu__backdrop {
+  position: absolute;
+}
 
 #landing {
   background-color: rgba(115, 66, 214, 0.1);
@@ -96,7 +121,25 @@ h2 {
 button {
     cursor: pointer;
 }
+.btn {
+  background-color: #7342d6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  max-width: 200px;
+  align-items: center;
+}
+align-items: center; does nothing here because .btn is not a flex container.
 
+To center the Browse Books button, center the parent div, not the button itself:
+
+.row__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 button:active {
     transform: translateY(1px);
 }
@@ -131,6 +174,14 @@ button:active {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+.row__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-cursor {
+  cursor: not-allowed;
 }
 
 /* 
@@ -313,3 +364,47 @@ FEATURES
   text-decoration: line-through;
   padding-right: 6px;
 }
+/*
+
+EXPLORE
+
+*/
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+
+}
+
+/*
+
+FOOTER
+
+
+*/
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo--img {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+}
+
+.footer__link,
+.footer__copyright {
+  color: #fff;
+}
+
+.footer__list {
+  margin: 20px 0 24px 0;
+}
+.footer__link { 
+  padding: 8px;
+}
+
+
+
+
+
+
+
