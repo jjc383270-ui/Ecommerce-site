@@ -79,11 +79,12 @@ li {
   text-align: center;
   border: none;
   color: #7342d6;
-  display: none;
-
+  display: block;
 }
 .menu__backdrop {
-  position: fixed;
+  visibility:hidden;
+  opacity: 0;
+  transform: translateX(100%);
   background-color: #242424;
   top: 0;
   left: 0;
