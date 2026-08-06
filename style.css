@@ -82,8 +82,8 @@ li {
   display: none;
 }
 .menu__backdrop {
-.position: fixed
-  visibility:hidden;
+  position: fixed;
+  visibility: hidden;
   opacity: 0;
   transform: translateX(100%);
   background-color: #242424;
