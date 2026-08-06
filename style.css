@@ -79,9 +79,10 @@ li {
   text-align: center;
   border: none;
   color: #7342d6;
-  display: block;
+  display: none;
 }
 .menu__backdrop {
+.position: fixed
   visibility:hidden;
   opacity: 0;
   transform: translateX(100%);
